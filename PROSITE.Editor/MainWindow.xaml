@@ -1,0 +1,13 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:PROSITE.Editor" xmlns:avalonedit="http://icsharpcode.net/sharpdevelop/avalonedit" x:Class="PROSITE.Editor.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+        <TextBox x:Name="tbExpression" Height="23" Margin="10,19,10,0" TextWrapping="Wrap" Text="[RK]-G-{EDRKHPCG}-[AGSCI]-[FY]-[LIVA]-x-[FYM]-[KEV](1)" VerticalAlignment="Top" TextChanged="tbExpression_TextChanged" FontFamily="Courier New"/>
+        <Label x:Name="lblError" Content="" Margin="10,47,10,0" VerticalAlignment="Top" Height="26"/>
+        <avalonedit:TextEditor x:Name="tbData" Margin="10,78,10,10" FontFamily="Courier New" FontSize="16"/>
+
+    </Grid>
+</Window>
